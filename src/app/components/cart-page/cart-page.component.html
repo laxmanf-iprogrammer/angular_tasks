@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-md-2">
+
+        <div class="card mb-4 ml-4" *ngFor="let cartinfodata of cartItems" style="width: 18rem;">
+
+            <div class="card-header">
+                {{cartinfodata.ProductName}}
+            </div>
+            <div class="card-body">
+                {{cartinfodata.ProductCost}}
+            </div>
+            <div class="card-footer">
+                {{cartinfodata.description}}
+
+            </div>
+
+        </div>
+    </div>

@@ -1,0 +1,14 @@
+<div class="row mt-2">
+<div class="col-md-2" *ngFor="let productlist of productListData; let i = index">
+  <div class="card" style="width: 18rem;" >
+    <img class="card-img-top watch-img" src={{productlist.img}} alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{productlist.ProductName}} {{i}}</h5>
+      <p class="card-text">{{productlist.ProductCost}}</p>
+      <a href="#" class="">{{productlist.Category}} {{i}}</a>
+    </div>
+    <button class="btn btn-secondary" routerLink="/product-details/{{productlist.id}}">view details</button>
+  </div>
+</div>
+<br>
+</div>

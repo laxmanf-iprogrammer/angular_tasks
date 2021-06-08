@@ -1,0 +1,59 @@
+ 
+  [
+    {
+      "id": 1,
+     "ProductName": "watch",
+     "ProductCost":  100,
+     "img": "https://i.gadgets360cdn.com/products/large/galaxy-watch-active2-470x800-1570718402.jpg",
+     "Category": "Digital",
+     "description": "Lorem ipsum"
+    },
+ 
+    {
+      "id": 2,
+     "ProductName": "watch",
+     "ProductCost":  100,
+     "img": "https://i.gadgets360cdn.com/products/large/galaxy-watch-active2-470x800-1570718402.jpg",
+     "Category": "Digital",
+     "description": "Lorem ipsum"
+    },
+ 
+    {
+      "id": 3,
+     "ProductName": "watch",
+     "ProductCost":  100,
+     
+     "img": "https://i.gadgets360cdn.com/products/large/galaxy-watch-active2-470x800-1570718402.jpg",
+     "Category": "Digital",
+     "description": "Lorem ipsum"
+    },
+
+    {
+      "id": 4,
+     "ProductName": "watch",
+     "ProductCost":  100,
+     
+     "img": "https://i.gadgets360cdn.com/products/large/galaxy-watch-active2-470x800-1570718402.jpg",
+     "Category": "Digital",
+     "description": "Lorem ipsum"
+    },
+    {
+      "id": 5,
+      "ProductName": "watch",
+      "ProductCost":  100,
+      
+      "img": "https://i.gadgets360cdn.com/products/large/galaxy-watch-active2-470x800-1570718402.jpg",
+      "Category": "Digital",
+      "description": "Lorem ipsum"
+     },
+     {
+      "id": 6,
+      "ProductName": "watch",
+      "ProductCost":  100,
+      
+      "img": "https://i.gadgets360cdn.com/products/large/galaxy-watch-active2-470x800-1570718402.jpg",
+      "Category": "Digital",
+      "description": "Lorem ipsum"
+     }
+ 
+   ]

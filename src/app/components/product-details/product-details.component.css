@@ -1,0 +1,11 @@
+.img-datails {
+    height: 50px;
+    width: 100px;
+    margin: 0px auto;
+}
+.card {
+    text-align: center;
+}
+.button {
+    cursor: pointer;
+}
