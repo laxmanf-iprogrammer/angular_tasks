@@ -19,9 +19,21 @@ export class ProductServiceService {
   public getAllProduct(): Observable<any> {
     return this.http.get("./assets/product.json");
   }
-  public addTocartItems(data:any) {
-    this.addProducts.push(data);
-    return this.addProducts;
+  getCartItems():any {
+    let productList;
+    productList = JSON.stringify(localStorage.getItem('cart_products'));
+    return JSON.parse(productList);
+  }
+
+  public addTocartItems(product:any) {
+    console.log(product)
+    if(localStorage.getItem('cart_products')) {
+      let data = localStorage.getItem('cart_products')? JSON.stringify(localStorage.getItem('cart_products')): "[]";
+      localStorage.setItem("cart_products", JSON.stringify([JSON.parse(JSON.parse(data)), product]));
+      console.log(localStorage.getItem('cart_products'))
+      }else {
+        localStorage.setItem("cart_products", JSON.stringify([product]))
+      }
   }
 
 }

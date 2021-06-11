@@ -1,8 +1,7 @@
-<div class="row">
+<!-- <div class="row mt-5">
     <div class="col-md-2">
 
-        <div class="card mb-4 ml-4" *ngFor="let cartinfodata of cartItems" style="width: 18rem;">
-
+        <div class="card mb-4 ml-4" *ngFor="let cartinfodata of cartItems ;  let i = index" style="width: 18rem;">
             <div class="card-header">
                 {{cartinfodata.ProductName}}
             </div>
@@ -10,9 +9,43 @@
                 {{cartinfodata.ProductCost}}
             </div>
             <div class="card-footer">
-                {{cartinfodata.description}}
-
+                {{cartinfodata.description}} 
             </div>
-
         </div>
     </div>
+ -->
+
+<!--  <div class="row mt-5 ml-5">
+     <div class="col-md-2"  *ngFor="let cartinfodata of cartItems ;  let i = index" >
+         <span>item add: {{ i + 1 }}</span>
+        <div class="card mb-5" style="width: 18rem;" style="width: 18rem;">
+        
+      
+            <img class="card-img-top mt-5" [src]="cartinfodata.img" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{cartinfodata.ProductName}}</h5>
+              <p class="card-text"> {{cartinfodata.description}} </p>
+              <p><span><i class="fa fa-inr mt-2 mr-2" style="font-size:20px"></i></span>{{cartinfodata.ProductCost}}</p>
+             
+            </div>
+          </div>
+     </div>
+ </div> 
+ -->
+
+ <div class="row mt-5 ml-5">
+    <div class="col-md-2">
+       <!--  <span>item add: {{ i + 1 }}</span> -->
+       <div class="card mb-5" style="width: 18rem;" style="width: 18rem;">
+           <img class="card-img-top mt-5" [src]="cartItems.img" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">{{cartItems.ProductName}}</h5>
+             <p class="card-text"> {{cartItems.description}} </p>
+             <p><span><i class="fa fa-inr mt-2 mr-2" style="font-size:20px"></i></span>{{cartItems.ProductCost}}</p>
+           </div>
+         </div>
+    </div>
+</div> 
+
+ <hr> 
+

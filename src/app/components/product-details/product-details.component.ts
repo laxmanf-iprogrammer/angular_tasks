@@ -18,7 +18,7 @@ export class ProductDetailsComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    this.getAddProduct();
+    //this.getAddProduct();
     this.productservice.getAllProduct().subscribe(res => {
       this.productDetails = res.filter((item:any ) => item.id == this.route.snapshot.paramMap.get('id'))
       console.log("productdetails #######",this.productDetails)
@@ -26,14 +26,14 @@ export class ProductDetailsComponent implements OnInit {
       console.log(err)
     })
   }
-
-  addToCart(product:any) {
-   localStorage.setItem("cart_products", JSON.stringify(this.productservice.addTocartItems(product)));
-}
-
-getAddProduct() {
   
-  //console.log("add item",this.addItemCount.localStorage.getItem('this.addProduct'))
+  addToCart(product:any) {
+   this.productservice.addTocartItems(product);
 }
+
+// getAddProduct() {
+  
+//   //console.log("add item",this.addItemCount.localStorage.getItem('this.addProduct'))
+// }
 
 }

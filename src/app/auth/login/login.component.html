@@ -1,0 +1,23 @@
+<div class="login-form">
+    <form [formGroup]="LoginForm" (submit)="onSubmit(LoginForm)" >
+        <h2 class="text-center">Log in</h2>       
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Username" required="required" formControlName="userName"
+            [ngClass]="{ 'ng-invalid ng-touched': submitted && f.userName.errors }">
+            <!-- div *ngIf="f.userName.errors.required">username required</div> -->
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" required="required" formControlName="passWord"
+            [ngClass]="{ 'ng-invalid ng-touched': submitted && f.passWord.errors }">
+            <!-- <div *ngIf="f.passWord.errors.required">Confirm Password is required</div> -->
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block" >Log in</button>
+        </div>
+        <div class="clearfix">
+            <label class="float-left form-check-label"><input type="checkbox"> Reme mber me</label>
+            <a href="#" class="float-right">Forgot Password?</a>
+        </div>        
+    </form>
+    <p class="text-center"><a href="#">Create an Account</a></p>
+</div>

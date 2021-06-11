@@ -1,11 +1,11 @@
 <div class="row mt-2">
 <div class="col-md-2" *ngFor="let productlist of productListData; let i = index">
   <div class="card" style="width: 18rem;" >
-    <img class="card-img-top watch-img" src={{productlist.img}} alt="Card image cap">
+    <img class="card-img-top watch-img mt-5" src={{productlist.img}} alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">{{productlist.ProductName}} {{i}}</h5>
-      <p class="card-text">{{productlist.ProductCost}}</p>
-      <a href="#" class="">{{productlist.Category}} {{i}}</a>
+      <h5 class="card-title">{{productlist.ProductName}}</h5>
+     <p class="card-text"> <span><i class="fa fa-inr mt-2 mr-2" style="font-size:20px"></i></span>{{productlist.ProductCost}}</p>
+      <a href="#" class="">{{productlist.Category}}</a>
     </div>
     <button class="btn btn-secondary" routerLink="/product-details/{{productlist.id}}">view details</button>
   </div>
