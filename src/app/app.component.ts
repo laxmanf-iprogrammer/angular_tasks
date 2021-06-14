@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { Course } from './course.model';
+import { CourserService } from './services/course.service';
 
 @Component({
   selector: 'app-root',
@@ -16,8 +18,11 @@ export class AppComponent {
   cartInFodata: any;
   cartItems: any;
   cartCount: any;
+  selectedCourse: any;
+  //selectedCourse: Course;
   constructor(
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private courseService: CourserService
   ) {
     this.loginForm = this.fb.group({
       email: ['', Validators.required],
@@ -38,7 +43,15 @@ export class AppComponent {
      this.cartItems =  JSON.parse(JSON.parse(data));
      this.cartCount = this.cartItems.length */
 
+    //  this.courseService.courseSelected
+    //   .subscribe(
+    //     (course: Course) => {
+    //       this.selectedCourse = course;
+    //     }
+    //   );
   }
+
+  
   items = ['item1', 'item2', 'item3', 'item4'];
 
   addNewItem(newItem: string) {

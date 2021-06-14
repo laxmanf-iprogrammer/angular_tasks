@@ -20,6 +20,14 @@ import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
 import { HighLightDirecative } from './custom-direcative/highlight.direcatives';
 import { DropdownDirecative } from './custom-direcative/dropdown.direcative';
+import { AccountComponent } from './account/account.component';
+import { NewAccountComponent } from './new-account/new-account.component';
+import { CourselistComponent } from './components/courselist/courselist.component';
+import { CourseitemComponent } from './components/courseitem/courseitem.component';
+import { CourserService } from './services/course.service';
+import { CollectionComponent } from './components/collection/collection.component';
+import { MarketComponent } from './components/market/market.component';
+import { CustomObservableComponent } from './components/custom-observable/custom-observable.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +44,14 @@ import { DropdownDirecative } from './custom-direcative/dropdown.direcative';
        ParentComponent,
        ChildComponent,
        HighLightDirecative,
-       DropdownDirecative
+       DropdownDirecative,
+       AccountComponent,
+       NewAccountComponent,
+       CourselistComponent,
+       CourseitemComponent,
+       CollectionComponent,
+       MarketComponent,
+       CustomObservableComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +62,9 @@ import { DropdownDirecative } from './custom-direcative/dropdown.direcative';
   providers: [
     ProductServiceService,
     AuthServiceService,
-    AuthGuardGuard
+    AuthGuardGuard,
+    CourserService
+
   ],
   bootstrap: [AppComponent]
 })

@@ -555,30 +555,25 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="product-list">ProductList</a>
       </li>
-
-      <!--   <li class="nav-item">
-        <a class="nav-link" routerLink="product-list">Login</a>
-      </li> -->
-
-      <!--  <li class="nav-item">
-        <a class="nav-link" (click)="logout()">Logout</a>
-      </li> -->
-
-      <!--       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li> -->
-
-      <!--   <li class="nav-item">
-        <a class="nav-link" routerLink="/login">login</a>
-      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" routerLink="courses">Courses</a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="collection">collection</a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="market">market</a>
+      </li>
+      <li>
+        <a href="" class="nav-link"  routerLink="user">user</a>
+      </li>
+      <li>
+        <a href="" class="nav-link" routerLink="user">use1</a>
+      </li>
+      <li>
+        <a href="" class="nav-link" routerLink="user">use2</a>
+      </li>
+      
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <!-- <span class="mr-5"> <img src="../assets/images/shopping-cart.svg" alt="">Cart</span> -->
@@ -595,7 +590,8 @@
 </nav>
 
 <hr>
-<div class="row">
+
+<!-- <div class="row">
   <div class="col-md-12">
     <p>communication betweein the components</p>
     <app-child [receivedParentData]="parenttochild"></app-child>
@@ -616,50 +612,35 @@
 
     <li appBasicHighlight> me with diff color</li>
   </div>
-</div>
-
-
-
-
+</div> -->
 
 <!-- <div>
     
   <app-child [receivedParentData]="parentToChilddata"></app-child>
+</div> -->
+
+
+
+
+
+
+
+
+
+<!-- <div class="row">
+  <div class="col-md-5">
+<app-course-list
+  (courseWasSelected)="selectedCourse = $event"></app-course-list>
+  </div>
+  <div class="col-md-7">
+<app-course-detail
+  *ngIf="selectedCourse; else infoText"
+  [course]="selectedCourse"></app-course-detail>
+<ng-template #infoText>
+  <p>Please select any course to view details!</p>
+</ng-template>
+  </div>
 </div>
  -->
-<!---<div class="container">
-  <div class="row">
-    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-      <div class="card card-signin my-5">
-        <div class="card-body">
-          <h5 class="card-title text-center">Sign In</h5>
-          <form class="form-signin" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-            <div class="form-label-group">
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address"  formControlName="email" required autofocus>
-              <label for="inputEmail">Email address</label>
-            </div>
-
-            <div class="form-label-group">
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" formControlName="password" required>
-              <label for="inputPassword">Password</label>
-            </div>
-
-            <div class="custom-control custom-checkbox mb-3">
-              <input type="checkbox" class="custom-control-input" id="customCheck1">
-              <label class="custom-control-label" for="customCheck1">Remember password</label>
-            </div>
-            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
-            <hr class="my-4">
-            <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
-            <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button> 
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>-->
-
-
-
 
 <router-outlet></router-outlet>
