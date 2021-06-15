@@ -11,18 +11,18 @@ export class CustomObservableComponent implements OnInit {
   // firstObsSubscription:Subscription;
 
  ngOnInit() {
-  const customObservable = Observable.create((observer:any) => {
-    let count = 0;
-    setInterval(
-      () => {
-        observer.next(count);
-        count++;
-      }, 1000);
-  });
+  // const customObservable = Observable.create((observer:any) => {
+  //   let count = 0;
+  //   setInterval(
+  //     () => {
+  //       observer.next(count);
+  //       count++;
+  //     }, 1000);
+  // });
 
-  customObservable.subscribe((data: Number) => {
-    console.log("Next Number: " + data)
-  });
+  // customObservable.subscribe((data: Number) => {
+  //   console.log("Next Number: " + data)
+  // });
 
   // ngOnDestroy() {
   //   this.customObservable.unsubscribe();

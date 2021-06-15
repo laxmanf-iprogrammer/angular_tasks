@@ -15,7 +15,8 @@ import { ProductServiceService } from './services/product-service.service';
 import { AuthServiceService } from './auth/auth-service.service';
 import { AuthGuardGuard } from './auth/auth-guard.guard';
 import { ServerElementComponent } from './components/server-element/server-element.component';
-import { CockpitComponent } from './components/cockpit/cockpit.component';
+//import { CockpitComponent } from './components/cockpit/cockpit.component';
+//import { CollectionComponent } from './components/collection/collection.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
 import { HighLightDirecative } from './custom-direcative/highlight.direcatives';
@@ -25,9 +26,12 @@ import { NewAccountComponent } from './new-account/new-account.component';
 import { CourselistComponent } from './components/courselist/courselist.component';
 import { CourseitemComponent } from './components/courseitem/courseitem.component';
 import { CourserService } from './services/course.service';
-import { CollectionComponent } from './components/collection/collection.component';
+
 import { MarketComponent } from './components/market/market.component';
 import { CustomObservableComponent } from './components/custom-observable/custom-observable.component';
+import { ShopingListModule } from './shoping-module/shopinglist.module';
+import { ItemsModule } from './items/items.module';
+
 
 @NgModule({
   declarations: [
@@ -36,28 +40,33 @@ import { CustomObservableComponent } from './components/custom-observable/custom
     ProductDetailsComponent,
     //LoginComponent,
     CartPageComponent,
-  
+
     CartCheckoutComponent,
-       LoginComponent,
-       ServerElementComponent,
-       CockpitComponent,
-       ParentComponent,
-       ChildComponent,
-       HighLightDirecative,
-       DropdownDirecative,
-       AccountComponent,
-       NewAccountComponent,
-       CourselistComponent,
-       CourseitemComponent,
-       CollectionComponent,
-       MarketComponent,
-       CustomObservableComponent
+    LoginComponent,
+    ServerElementComponent,
+
+    ParentComponent,
+    ChildComponent,
+    HighLightDirecative,
+    DropdownDirecative,
+    AccountComponent,
+    NewAccountComponent,
+    CourselistComponent,
+    CourseitemComponent,
+    //CollectionComponent,
+    //CockpitComponent,
+    MarketComponent,
+    CustomObservableComponent,
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    //ShopingListModule, 
+    ItemsModule
+    
   ],
   providers: [
     ProductServiceService,
